@@ -1,4 +1,7 @@
 # ScalingIndicator
+
+[ ![Download](https://api.bintray.com/packages/yuesong/maven/ScalingIndicator/images/download.svg) ](https://bintray.com/yuesong/maven/ScalingIndicator/_latestVersion)
+
 可对文字进行放大缩小和展示未读提示的PageIndicator <br />
 
 项目基于jake大神的https://github.com/JakeWharton/ViewPagerIndicator   <br />
