@@ -6,7 +6,7 @@
 
 项目基于jake大神的https://github.com/JakeWharton/ViewPagerIndicator   <br />
 
-做ViewPagerIndicator做了一些修改以适应产品的需求 <br/>
+对ViewPagerIndicator做了一些修改以适应产品的需求 <br/>
 
 效果图如下: <br />
 
