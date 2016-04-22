@@ -16,11 +16,13 @@
  */
 package com.jiang.android.indicator;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
+import android.os.Build;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
@@ -349,6 +351,14 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
                 super.onMeasure(MeasureSpec.makeMeasureSpec(mMaxTabWidth, MeasureSpec.EXACTLY),
                         heightMeasureSpec);
             }
+        }
+
+        @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
+        public void callOnClick(int item) {
+            if (mTabLayout.getChildCount() > item) {
+                mTabLayout.getChildAt(item).callOnClick();
+            }
+
         }
 
         public int getIndex() {
